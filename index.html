@@ -68,13 +68,73 @@
             </span>
           </div>
           <span class="navbar-text">
-            <a href="#" role="button" class="px-2"
+            <a role="button" id="loginButton" class="px-2"
               ><i class="fa-solid fa-user fa-lg"></i> Login</a
             >
           </span>
         </div>
       </nav>
     </header>
+    <div class="modal fade" role="dialog" id="loginModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Login</h3>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label class="sr-only" for="loginEmail"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control form-control-sm"
+                      id="loginEmail"
+                      placeholder="Enter email"
+                    />
+                  </div>
+                  <div class="form-group col-12">
+                    <label for="loginPassword" class="sr-only"
+                      >Email address</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control form-control-sm"
+                      id="loginPassword"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" />
+                      <label class="form-check-label">Remember Me</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <button
+                    type="button"
+                    class="btn btn-secondary btn-sm ml-auto"
+                    data-dismiss="modal"
+                  >
+                    Cancel
+                  </button>
+                  <button type="submit" class="btn btn-primary btn-sm ml-1">
+                    Sign In
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="row">
         <div class="col">
@@ -90,7 +150,7 @@
           </div>
         </div>
       </div>
-      <hr>
+      <hr />
       <div class="row pb-5">
         <div class="col col-lg-4 card" style="width: 18rem">
           <img
@@ -169,5 +229,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
